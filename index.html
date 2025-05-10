@@ -2,28 +2,33 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Информация о центре</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lingvium</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Репетиторский Центр</h1>
-        <div class="buttons">
-            <button onclick="showSection('about')">О нас</button>
-            <button onclick="showSection('teachers')">Преподаватели</button>
-            <button onclick="showSection('contacts')">Контакты</button>
-        </div>
-        <div id="about" class="section active">
-            <p>Добро пожаловать в наш репетиторский центр! Мы помогаем ученикам достигать успехов в учебе.</p>
-        </div>
-        <div id="teachers" class="section">
-            <div id="teachers-container" class="card-container"></div>
-        </div>
-        <div id="contacts" class="section">
-            <p>Контакты: г. Москва, ул. Знаний, 10<br>Тел: +7 (495) 123-45-67<br>Email: info@tutorcenter.ru</p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <header>
+    <h1>ЛИНГВИУМ</h1>
+    <p class="tagline">Открой мир через язык</p>
+  </header>
+  <main class="container">
+    <section class="card-container">
+      <div class="card">
+        <h2>Преподаватели</h2>
+        <p>Скоро здесь появится список ваших преподавателей.</p>
+        <button>Подробнее</button>
+      </div>
+      <div class="card">
+        <h2>Расписание</h2>
+        <p>Удобный доступ к вашим занятиям в любое время.</p>
+        <button>Открыть</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Lingvium</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
