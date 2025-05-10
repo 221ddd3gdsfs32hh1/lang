@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #e6e8ed, #f4f7fa);
+  background: linear-gradient(to bottom, #ebecf0, #f6f8fb); /* обновлённый фон */
   color: #2c3e50;
 }
 
