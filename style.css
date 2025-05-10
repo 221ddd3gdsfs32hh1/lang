@@ -12,52 +12,62 @@ header {
   color: white;
 }
 
-header .tagline {
+.tagline {
   margin-top: 5px;
   font-size: 1rem;
-  color: #dddddd;
+  color: #ddd;
 }
 
-.container {
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.card-container {
+.nav-buttons {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  flex-wrap: wrap;
+  background-color: #f8f9fb;
 }
 
-.card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
-
-button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 15px;
+.nav-buttons button {
+  padding: 10px 20px;
+  font-size: 0.95rem;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.nav-buttons button:hover {
   background-color: #0056b3;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.section.active {
+  display: block;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 180px;
+  margin-top: 15px;
+  background-color: #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 0.95rem;
 }
 
 footer {
@@ -65,4 +75,9 @@ footer {
   padding: 20px;
   font-size: 0.9rem;
   color: #888;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
