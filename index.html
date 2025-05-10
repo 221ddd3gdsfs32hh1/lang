@@ -8,22 +8,20 @@
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Логотип Лингвиум" class="logo" />
     <h1>ЛИНГВИУМ</h1>
     <p class="tagline">Открой мир через язык</p>
   </header>
-
   <nav class="nav-buttons">
     <button onclick="showSection('about', this)" class="active">О нас</button>
     <button onclick="showSection('reviews', this)">Отзывы</button>
     <button onclick="showSection('contacts', this)">Контакты</button>
   </nav>
-
   <main class="container">
     <section id="about" class="section active">
       <h2>О нас</h2>
       <p>Lingvium — это языковой центр нового поколения. Мы объединяем профессионализм преподавателей, комфорт обучения и индивидуальный подход к каждому. Мы не просто учим языкам — мы открываем миры через общение.</p>
     </section>
-
     <section id="reviews" class="section">
       <h2>Отзывы</h2>
       <div class="review-card">
@@ -48,20 +46,17 @@
         </div>
       </div>
     </section>
-
     <section id="contacts" class="section">
       <h2>Контакты</h2>
       <p>📍 Адрес: ул. Образования, 10, г. Москва<br />
          📧 Email: info@lingvium.ru<br />
          📞 Телефон: +7 (999) 123-45-67</p>
-      <div class="map-placeholder">[Здесь может быть карта]</div>
+      <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.0881894485655!2d37.61729931601271!3d55.75582648055314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a70d93b33%3A0x5c86a2a4684e2e31!2z0JzQtdC90YLRgCDQv9Cw0YDQtdC90LDRjyDQvtCx0LsuLCAxMCwg0JzQvtGB0LrQstCwLCDQnNC-0YHQutCy0LAsIDEwMDAxNg!5e0!3m2!1sru!2sru!4v1622216712345!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
-
   <footer>
     <p>&copy; 2025 Lingvium</p>
   </footer>
-
   <script>
     function showSection(id, button) {
       document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
