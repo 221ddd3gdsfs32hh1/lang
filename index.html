@@ -11,23 +11,40 @@
     <h1>ЛИНГВИУМ</h1>
     <p class="tagline">Открой мир через язык</p>
   </header>
+
+  <nav class="nav-buttons">
+    <button onclick="showSection('about')">О нас</button>
+    <button onclick="showSection('teachers')">Преподаватели</button>
+    <button onclick="showSection('contacts')">Контакты</button>
+  </nav>
+
   <main class="container">
-    <section class="card-container">
-      <div class="card">
-        <h2>Преподаватели</h2>
-        <p>Скоро здесь появится список ваших преподавателей.</p>
-        <button>Подробнее</button>
-      </div>
-      <div class="card">
-        <h2>Расписание</h2>
-        <p>Удобный доступ к вашим занятиям в любое время.</p>
-        <button>Открыть</button>
-      </div>
+    <section id="about" class="section active">
+      <h2>О нас</h2>
+      <p>Lingvium — это современный языковой центр, где обучение происходит в комфортной, дружелюбной атмосфере. Мы верим, что язык — это не только грамматика, но и ключ к общению, культуре и возможностям.</p>
+    </section>
+
+    <section id="teachers" class="section">
+      <h2>Преподаватели</h2>
+      <p>Скоро здесь появится список преподавателей с фото и описанием.</p>
+    </section>
+
+    <section id="contacts" class="section">
+      <h2>Контакты</h2>
+      <p>Адрес: ул. Образования, 10, г. Москва<br />Email: info@lingvium.ru<br />Телефон: +7 (999) 123-45-67</p>
+      <div class="map-placeholder">[Здесь может быть карта]</div>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Lingvium</p>
   </footer>
-  <script src="script.js"></script>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
