@@ -1,8 +1,7 @@
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+  background: linear-gradient(to bottom, #ffffff, #f4f7fa);
   color: #2c3e50;
 }
 
@@ -16,40 +15,40 @@ header {
 header .tagline {
   margin-top: 5px;
   font-size: 1rem;
-  color: #ddd;
+  color: #dddddd;
 }
 
 .container {
   padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .card-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
-  justify-content: center;
 }
 
 .card {
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
-  width: 100%;
-  max-width: 300px;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 button {
   width: 100%;
   padding: 12px;
-  margin-top: 10px;
-  background-color: #3F3D56;
+  margin-top: 15px;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 8px;
@@ -58,7 +57,7 @@ button {
 }
 
 button:hover {
-  background-color: #2a283d;
+  background-color: #0056b3;
 }
 
 footer {
